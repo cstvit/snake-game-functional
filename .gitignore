@@ -1,0 +1,14 @@
+# Arquivos do Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Arquivos temporários e backups de editores
+*~
+*.un~
+.*.un~
+
+# Arquivos do Pytest
+.pytest_cache/

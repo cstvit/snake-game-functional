@@ -1,4 +1,4 @@
-### Snake Game — Pure Functional Core & Imperative Shell
+# Snake Game — Pure Functional Core & Imperative Shell
 
 Este projeto consiste na implementação do clássico jogo Snake em Python, desenvolvido como requisito para a disciplina de Programação Funcional.
 A arquitetura do projeto foi desenhada estritamente sobre a política Functional Core / Imperative Shell, garantindo a total separação entre regras de negócio puras (sem efeitos colaterais) e os mecanismos de entrada/saída (I/O).
@@ -21,7 +21,7 @@ A aplicação segue uma divisão clara entre lógica imutável e infraestrutura 
 
 ## Responsabilidade dos Módulos
 
-# core/model.py
+### core/model.py
 Define os tipos imutáveis e primitivos geométricos puros:
 
 - GameState: Declaração do estado imutável da aplicação.
@@ -30,7 +30,7 @@ Define os tipos imutáveis e primitivos geométricos puros:
 
 - check_self_collision: Predicado para verificar colisão da cabeça com o corpo.
 
-# core/game.py
+### core/game.py
 Implementa o motor puramente funcional e as regras do jogo:
 
 - create_initial_state: Fabrica o estado inicial zerado mantendo o recorde.
@@ -41,7 +41,7 @@ Implementa o motor puramente funcional e as regras do jogo:
 
 - step: Função de evolução temporal. Dado o tick, calcula deslocamento, colisão, consumo de fruta, pontuação e condição de Game Over.
 
-# shell/render.py & main.py
+### shell/render.py & main.py
 A casca imperativa que conecta o usuário ao motor:
 
 - draw_state: Desenha os elementos (O, o, *, HUD e pop-ups) no terminal com base no GameState recebido.
